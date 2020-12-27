@@ -51,7 +51,6 @@ sudo付きのコマンドはMac OSのパスワード入力が必要です。
 
 インストールが完了したら、「3.関連パッケージのインストール」のコマンドを再実行してください。  
  
-
-
-
-
+## 2. ESLintとPrettierのCI環境を構築
+### 2-1. パッケージのインストール
+`npm install --save-dev eslint eslint-config-prettier prettier @typescript-eslint/parser @typescript-eslint/eslint-plugin husky lint-staged`
