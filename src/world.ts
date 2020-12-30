@@ -11,6 +11,8 @@ export default class World {
   public sayHello(elem: HTMLElement | null) {
     if (elem) {
       return (elem.innerText = this.message)
+    } else {
+      return
     }
   }
 }
