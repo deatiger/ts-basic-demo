@@ -9,8 +9,8 @@
     "lint": "eslint --fix 'src/**/*.{js,ts}'",
     "lint-fix": "eslint --fix './src/**/*.{js,ts}' && prettier --write './src/**/*.{js,ts}'"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Torahack",
+  "license": "MIT",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.11.0",
     "@typescript-eslint/parser": "^4.11.0",
