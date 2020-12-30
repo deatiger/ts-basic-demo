@@ -54,3 +54,14 @@ sudo付きのコマンドはMac OSのパスワード入力が必要です。
 ## 2. ESLintとPrettierのCI環境を構築
 ### 2-1. パッケージのインストール
 `npm install --save-dev eslint eslint-config-prettier prettier @typescript-eslint/parser @typescript-eslint/eslint-plugin husky lint-staged`
+
+### 2-2. huskyがもし動かなかったら...
+.git/hooksが正常に作成されていない可能性アリ 
+これで確認する   
+`ls -la .git/hooks/ls -la .git/hooks/`  
+`.sample`しかなかったらNG  
+NGの場合はインストールし直す
+`npm uninstall huksy`  
+`npm install --save-dev husky`  
+もう一度hooksを確認  
+`ls -la .git/hooks/ls -la .git/hooks/`
