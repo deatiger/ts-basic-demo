@@ -59,6 +59,7 @@ sudo付きのコマンドはMac OSのパスワード入力が必要です。
 .git/hooksが正常に作成されていない可能性アリ 
 これで確認する   
 `ls -la .git/hooks/ls -la .git/hooks/`  
+  
 `.sample`しかなかったらNG  
 NGの場合はインストールし直す
 `npm uninstall huksy`  
