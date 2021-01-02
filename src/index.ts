@@ -4,8 +4,8 @@
 // const world = new World('Hello World!!!')
 // world.sayHello(root)
 
+// 03.基本の型定義
 import { anySample, notExist, primitiveSample, unknownSample } from './basic'
-
 anySample()
 notExist()
 primitiveSample()
