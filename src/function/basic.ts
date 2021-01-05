@@ -17,6 +17,10 @@ export const logMessage3 = function (message: string): void {
 // アロー関数式の省略記法
 export const logMessage4 = (message: string): void => console.log('Function basic sample 4:', message)
 
+export const alwaysThrowError = (message: string): never => {
+  throw new Error(message)
+}
+
 // 呼び出しシグネチャ（省略記法）
 type LogMessage = (message: string) => void
 export const logMessage5: LogMessage = (message) => {
