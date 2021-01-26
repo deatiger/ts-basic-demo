@@ -6,8 +6,10 @@ export default async function asyncAwaitSample() {
     id: number
   }
 
+  type FetchProfile = () => Promise<Profile | null>
+
   // async/awaitでコールバック関数を同期的な処理に置き換える
-  const fetchProfile = async (): Promise<Profile | null> => {
+  const fetchProfile: FetchProfile = async () => {
     const response = await fetch(url)
       .then((response) => response)
       .catch((error) => {

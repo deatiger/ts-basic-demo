@@ -6,8 +6,10 @@ export default function callbackSample() {
     id: number
   }
 
+  type FetchProfile = () => void
+
   // コールバックで呼び出す非同期関数(fetch)
-  const fetchProfileCallback = () => {
+  const fetchProfileCallback: FetchProfile = () => {
     fetch(url)
       .then((res) => {
         // レスポンスbodyをJSONとして読み取った結果を返す

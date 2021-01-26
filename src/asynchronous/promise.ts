@@ -6,7 +6,9 @@ export default function promiseSample() {
     id: number
   }
 
-  const fetchProfilePromise = (): Promise<Profile | null> => {
+  type FetchProfile = () => Promise<Profile | null>
+
+  const fetchProfilePromise: FetchProfile = () => {
     return new Promise((resolve, reject) => {
       fetch(url)
         .then((res) => {
