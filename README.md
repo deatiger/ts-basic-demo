@@ -66,3 +66,4 @@ NGの場合はインストールし直す
 `npm install --save-dev husky`  
 もう一度hooksを確認  
 `ls -la .git/hooks/ls -la .git/hooks/`
+# ts-basic-memo
